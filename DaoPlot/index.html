@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head> 
+            <meta charset="UTF-8">
+            <meta name="DatoPlot" content="Página para las materias de Programación y Practicas Profesionalizantes.">
+            <meta name="autor" content="Roman">
+            <title> DaoPlot </title>
+            <link rel="icon" href="img/favicon.png" type="image/png">
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        </head>
+        <body> 
+    <canvas id="fondoAnimado"></canvas>
+    
+    <div class="contenedor">
+        <!-- PANEL LATERAL -->
+        <div class="panel-lateral">
+            <a id="boton-inicio" onclick="mostrarSeccion('principal')">
+                <img src="img/mundodao.png" alt="Inicio"/>
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li onclick="mostrarSeccion('principal')">
+                        <i class="fas fa-house">Principal</i>
+                    </li>
+                    <li onclick="mostrarSeccion('noticias')">
+                        <i class="fas fa-newspaper">Noticias</i>
+                    </li>
+                    <li onclick="mostrarSeccion('galeria')">
+                        <i class="fas fa-image">Galeria</i>
+                    </li>
+                    <li onclick="mostrarSeccion('contacto')">
+                       <i class="fas fa-envelope">Contacto</i>
+                    </li>
+                    <li onclick="mostrarSeccion('mapa')">
+                        <i class="fas fa-map">Mapa</i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="contenido">
+            <header> 
+                <h1><b>Dao|Plot</b></h1>
+            </header>
+
+            <main>
+                <section id="principal" class="seccion activa">
+                    <h2>Principal</h2>
+                    <span><h3>Arcane</h3></span>
+                    <p> Antes que nada, "Arcane" un titulo de una seríe animada donde se desarrolla en el universo de
+                        <b>League of legends</b>.</p>
+                    <p> La seríe tuvo un exito rotundo, ya que no solo fue bien recibida para los fans del juego, 
+                        Si no que también para los que no lo conocian. Su historia, animación y desarrrollo de personajes
+                        impacto a un publico totalmente nuevo. Permitio superar los limites de su mundo y atraer a una audiencia más
+                        amplia, incluyendo a aquellos que no estaban familiarizados con el juego original.</p>
+                    <p> La sinopsis de <b><i>Arcane</i></b>, esta ambientada en las ciudades opuestas de Piltover y Zaun, 
+                        que cuenta la historia de dos hermanas huérfanas, Vi y Jinx, y sus vidas afectadas por la tensión entre el 
+                        progreso científico y la desigualdad social que desata la tecnología Hextech en Piltover y la droga Shimmer(brillo) en Zaun.
+                        La trama explora el trauma, la familia, la corrupción y la lucha por una vida mejor en un mundo dividido. </p>
+                        <hr class="separador">
+                        <h4>Contexto y Ambientación</h4>
+                        <p><h5>Piltover:</h5> Una ciudad próspera en la superficie, conocida por su academia, sus avances científicos y 
+                         la invención de la tecnología mágica Hextech, que permite controlar la energía mágica.
+                         <h5>Zaun:</h5> La ciudad subterránea, un mundo de pobreza, criminalidad y contaminación.
+                         Las tensiones y rivalidades entre ambas ciudades dividen a familiares y cercanos.</p>
+                        <hr class="separador">
+                         <h4>
+                          <a href="javascript:void(0)" onclick="mostrarSeccion('galeria')">
+                          Personajes Principales
+                          </a>
+                        </h4>
+                        <h4>
+                        <a href="javascript:void(0)" onclick="mostrarSeccion('mapa')">
+                         Mapa del Mundo de Runeterra
+                        </a>
+                        </h4>
+                        <hr class="separador">
+                         <h4>La Trama:</h4>
+                         <p>La historia se desarrolla cuando los avances científicos de Piltover, como el Hextech, exacerbán las tensiones con Zaun. 
+                          Al mismo tiempo, en Zaun, la aparición de una nueva droga llamada Shimmer, que transforma a los humanos en monstruos,
+                          aumenta la peligrosidad y el caos. 
+                          La serie sigue las consecuencias de estas innovaciones y las luchas de sus protagonistas, explorando cómo los traumas
+                          infantiles y el deseo de progreso afectan sus vidas. 
+                          La relación entre las hermanas se ve profundamente afectada, colocándolas en bandos opuestos en un conflicto
+                          que amenaza con destruir a sus ciudades.</p>
+                </section>
+
+                <section id="noticias" class="seccion">
+                    <h2>Noticias</h2>
+                    <hr class="separador">
+                    <h3>Arcane</h3>
+                    <p>La primera temporada de Arcane se lanzó el 6 de noviembre de 2021 en Netflix y Tencent Video, y se presentó en tres actos,
+                         con episodios lanzados semanalmente hasta el 20 de noviembre de 2021. </p>
+                    <p>La segunda temporada de Arcane ya se estrenó en Netflix. Los episodios se lanzaron en tandas, con el primer acto el 9 de noviembre de 2024,
+                         el segundo el 16 de noviembre, y los episodios finales el 23 de noviembre de 2024. </p>
+                        <p>Después de "Arcane", se espera que la empresa Riot Games se concentre en desarrollar más el mundo orígen,
+                            mostrando más regiones y personajes del universo de League of Legends (Continente Valoran, Runaterra), 
+                            regiones como Demacia, Noxus, Ionia, Freljord, Targon, Shurima, Ixtal, las Islas de la Sombra, entre otras.
+                            Grandes guerras que definiran el rumbo de la historia como Shurima y el Vacío.</p>
+                </section>
+ <section id="galeria" class="seccion">
+     <h2>Galería</h2>
+    <div class="galeria-grid">
+    
+    <div class="galeria-item">
+        <p>Vi</p>
+      <img src="img/vi.png" alt="Vi - Personaje principal">
+    </div>
+    
+    <div class="galeria-item">
+        <p>Jinx</p>
+      <img src="img/jinx.png" alt="Jinx - Personaje principal">
+    </div>
+
+    <div class="galeria-item">
+        <p>Caitlyn</p>
+      <img src="img/Caitlyn.png" alt="Caitlyn - Personaje principal">
+    </div>
+
+    <div class="galeria-item">
+        <p>Viktor</p>
+      <img src="img/viktor.png" alt="Viktor - Personaje principal">
+    </div>
+
+    <div class="galeria-item">
+        <p>Vander</p>
+      <img src="img/vander.png" alt="Vander - Personaje principal">
+    </div>
+
+    <div class="galeria-item">
+        <p>Silco</p>
+      <img src="img/silco.png" alt="Silco - Personaje principal">
+    </div>
+
+    <div class="galeria-item">
+        <p>Heimerdinger</p>
+      <img src="img/heimer.png" alt="Heimerdinger - Personaje principal">
+    </div>
+
+    <div class="galeria-item">
+        <p>Singed</p>
+      <img src="img/singed.png" alt="Singed - Personaje principal">
+    </div>
+
+    <div class="galeria-item">
+        <p>Mel</p>
+      <img src="img/mel.png" alt="Mel - Personaje principal">
+    </div>
+
+    <div class="galeria-item">
+        <p>Ekko</p>
+      <img src="img/ekko.png" alt="Ekko - Personaje principal">
+    </div>
+    
+    <div class="galeria-item">
+        <p>Piltover</p>
+      <img src="img/piltoverv2.png" alt="Ciudad de Piltover">
+    </div>
+    
+    <div class="galeria-item">
+        <p>Zaun</p>
+      <img src="img/Zaunv2.png" alt="Ciudad de Zaun">
+    </div>
+
+    <div class="galeria-item">
+        <p>Freljord</p>
+      <img src="img/flerjordv2.png" alt="Región de Freljord">
+    </div>
+    <!-- 🔹 Podés seguir agregando más imágenes acá -->  
+  </div>
+</section>
+
+                </section>
+
+                <section id="contacto" class="seccion">
+                    <h2>Contacto</h2>
+                    <p>2025 - Página Base</p>
+                    <p>Contacto: romangay1933@gmail.com</p>
+                </section>
+                <section id="mapa" class="seccion">
+                    <h2>Mapa Mundial</h2>
+                    <button id="abrirMapa">Ver Mapa</button>
+                </section>
+            </main>
+            <div id="modalMapa" class="modal">
+                <span class="cerrar">&times;</span>
+                <div class="modal-contenido">
+                  <div class="mapa-container">
+                     <img src="img/mapav2use.png" alt="Mapa del mundo de Runeterra" class="mapa-img">
+                         <div class="nodo" style="top: 40%; left: 17%;" data-info="Demacia" data-color="#e6e6e6"></div>
+                         <div class="nodo" style="top: 19%; left: 36%;" data-info="Noxus" data-color="#b30000"></div>
+                         <div class="nodo" style="top: 10%; left: 60%;" data-info="Ionia" data-color="#cc66ff"></div>
+                         <div class="nodo" style="top: 46%; left: 45%;" data-info="Piltover & Zaun" data-color="#33cc33"></div>
+                         <div class="nodo" style="top: 52%; left: 61%;" data-info="Bilgewater" data-color="#006666"></div>
+                         <div class="nodo" style="top: 74%; left: 29%;" data-info="Targon" data-color="#ccccff"></div>
+                         <div class="nodo" style="top: 67%; left: 40%;" data-info="Shurima" data-color="#d4af37"></div>
+                         <div class="nodo" style="top: 65%; left: 52%;" data-info="Ixtal" data-color="#228b22"></div>
+                         <div class="nodo" style="top: 70%; left: 72%;" data-info="Islas de la Sombra" data-color="#444444"></div>
+                         <div class="nodo" style="top: 20%; left: 21%;" data-info="Freljord" data-color="#3399ff"></div>
+                  </div>
+                       <!-- Mini Panel -->
+                    <div id="infoPanel" class="info-panel">
+                    <span id="cerrarPanel" class="cerrar-panel">&times;</span>
+                    <div id="imagenesRegion" class="imagenes-region"></div>
+                    <h2 id="tituloRegion"></h2>
+                    <p id="descripcionRegion"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+    </html>
