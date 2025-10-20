@@ -591,6 +591,45 @@ hr.separador {
   letter-spacing: 1px;
 }
 
+/* --- Imágenes integradas en la sección principal (Zaun y Piltover) --- */
+.ciudades-arcane {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  margin: 20px 0;
+}
+
+/* caja con relación de aspecto fija para que ambas imágenes se vean iguales */
+.ciudad {
+  flex: 1 1 45%;
+  max-width: 45%;
+  aspect-ratio: 16 / 10;      /* ajusta proporción visual */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  background: #111;
+}
+
+.ciudad img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* recorta la imagen para llenar la caja */
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.ciudad img:hover {
+  transform: scale(1.04);
+}
+
+/* responsive: apilar en móviles */
+@media (max-width: 768px) {
+  .ciudades-arcane { flex-direction: column; gap: 14px; }
+  .ciudad { max-width: 90%; width: 90%; aspect-ratio: 16 / 9; }
+}
+
+
 /* footer {
 
     color: white;
