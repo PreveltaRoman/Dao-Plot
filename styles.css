@@ -522,6 +522,74 @@ hr.separador {
   background: linear-gradient(to right, transparent, rgba(255,102,0,0.8), transparent);
   margin: 30px 0;
 }
+/* --- Ajuste uniforme de imágenes en la galería --- */
+.galeria-item {
+  aspect-ratio: 1 / 1;        /* 🔹 cada recuadro será cuadrado */
+  overflow: hidden;           /* 🔹 evita que sobresalga algo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;          /* 🔹 llena el espacio sin deformarse */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.galeria-item:hover img {
+  transform: scale(1.05);     /* 🔹 leve zoom al pasar el mouse */
+}
+
+.galeria-item p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 0 0 8px 8px;
+}
+
+/* --- Galería con nombre encima de cada imagen --- */
+.galeria-item {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.galeria-item:hover img {
+  transform: scale(1.05);
+}
+
+/* --- Texto superpuesto arriba --- */
+.galeria-item p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 6px 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  letter-spacing: 1px;
+}
 
 /* footer {
 
