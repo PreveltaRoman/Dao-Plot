@@ -30,11 +30,17 @@
                     <li onclick="mostrarSeccion('galeria')">
                         <i class="fas fa-image">Galeria</i>
                     </li>
-                    <li onclick="mostrarSeccion('contacto')">
-                       <i class="fas fa-envelope">Contacto</i>
+                    <li onclick="mostrarSeccion('personajes')">
+                        <i class="fas fa-users">Personajes</i>
+                    </li>
+                    <li onclick="mostrarSeccion('regiones')">
+                        <i class="fas fa-mountain">Regiones</i>
                     </li>
                     <li onclick="mostrarSeccion('mapa')">
                         <i class="fas fa-map">Mapa</i>
+                    </li>
+                     <li onclick="mostrarSeccion('contacto')">
+                       <i class="fas fa-envelope">Contacto</i>
                     </li>
                 </ul>
             </nav>
@@ -62,18 +68,18 @@
                         La trama explora el trauma, la familia, la corrupción y la lucha por una vida mejor en un mundo dividido. </p>
                         <hr class="separador">
                         <h4>Contexto y Ambientación</h4>
+                        <!--            -->
                         <div class="ciudades-arcane">
+                        <figure class="ciudad">
+                        <img src="img/Zaunv2.png" alt="Zaun">
+                        </figure>
                         <figure class="ciudad">
                         <img src="img/piltoverv2.png" alt="Piltover">
                         </figure>
                         </div>
+                        <!--            -->
                         <p><h5>Piltover:</h5> Una ciudad próspera en la superficie, conocida por su academia, sus avances científicos y 
                          la invención de la tecnología mágica Hextech, que permite controlar la energía mágica.
-                         <div class="ciudades-arcane">
-                        <figure class="ciudad">
-                        <img src="img/Zaunv2.png" alt="Zaun">
-                        </figure>
-                        </div>
                          <h5>Zaun:</h5> La ciudad subterránea, un mundo de pobreza, criminalidad y contaminación.
                          Las tensiones y rivalidades entre ambas ciudades dividen a familiares y cercanos.</p>
                         <hr class="separador">
@@ -111,79 +117,314 @@
                             regiones como Demacia, Noxus, Ionia, Freljord, Targon, Shurima, Ixtal, las Islas de la Sombra, entre otras.
                             Grandes guerras que definiran el rumbo de la historia como Shurima y el Vacío.</p>
                 </section>
+
  <section id="galeria" class="seccion">
      <h2>Galería</h2>
     <div class="galeria-grid">
     
-    <div class="galeria-item">
-        <p>Vi</p>
-      <img src="img/vi.png" alt="Vi - Personaje principal">
-    </div>
+    <div class="galeria-item" id="galeria-vi">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('personajes','vi')">
+    <p>Vi</p>
+    <img src="img/vi.png" alt="Vi">
+  </a>
+</div>
+
     
-    <div class="galeria-item">
-        <p>Jinx</p>
-      <img src="img/jinx.png" alt="Jinx - Personaje principal">
-    </div>
+    <div class="galeria-item" id="galeria-jinx">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('personajes','jinx')">
+    <p>Jinx</p>
+    <img src="img/jinx.png" alt="Jinx - Personaje principal">
+  </a>
+</div>
 
-    <div class="galeria-item">
-        <p>Caitlyn</p>
-      <img src="img/Caitlyn.png" alt="Caitlyn - Personaje principal">
-    </div>
+ <div class="galeria-item" id="galeria-jayce">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('personajes','jayce')">
+    <p>Jayce</p>
+    <img src="img/jayce.png" alt="Jayce">
+  </a>
+</div>
 
-    <div class="galeria-item">
-        <p>Viktor</p>
-      <img src="img/viktor.png" alt="Viktor - Personaje principal">
-    </div>
+    <div class="galeria-item" id="galeria-caitlyn">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('personajes','caitlyn')">
+    <p>Caitlyn</p>
+    <img src="img/Caitlyn.png" alt="Caitlyn">
+  </a>
+</div>
 
-    <div class="galeria-item">
-        <p>Vander</p>
-      <img src="img/vander.png" alt="Vander - Personaje principal">
-    </div>
+<div class="galeria-item" id="galeria-viktor">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('personajes','viktor')">
+    <p>Viktor</p>
+    <img src="img/viktor.png" alt="Viktor">
+  </a>
+</div>
 
-    <div class="galeria-item">
-        <p>Silco</p>
-      <img src="img/silco.png" alt="Silco - Personaje principal">
-    </div>
+    <div class="galeria-item" id="galeria-vander">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('personajes','Vander')">
+    <p>Vander</p>
+    <img src="img/vander.png" alt="Vander">
+  </a>
+</div>
+     
+    <div class="galeria-item" id="galeria-silco">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('personajes','silco')">
+    <p>Silco</p>
+    <img src="img/silco.png" alt="Silco">
+  </a>
+</div>
 
-    <div class="galeria-item">
-        <p>Heimerdinger</p>
-      <img src="img/heimer.png" alt="Heimerdinger - Personaje principal">
-    </div>
+    <div class="galeria-item" id="galeria-heimerdinger">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('personajes','heimerdinger')">
+    <p>Heimerdinger</p>
+    <img src="img/heimer.png" alt="Heimerdinger">
+  </a>
+</div>
 
-    <div class="galeria-item">
-        <p>Singed</p>
-      <img src="img/singed.png" alt="Singed - Personaje principal">
-    </div>
+   <div class="galeria-item" id="galeria-singed">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('personajes','singed')">
+    <p>Singed</p>
+    <img src="img/singed.png" alt="Singed">
+  </a>
+</div>
 
-    <div class="galeria-item">
-        <p>Mel</p>
-      <img src="img/mel.png" alt="Mel - Personaje principal">
-    </div>
+    <div class="galeria-item" id="galeria-mel">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('personajes','mel')">
+    <p>Mel</p>
+    <img src="img/mel.png" alt="Mel">
+  </a>
+</div>
 
-    <div class="galeria-item">
-        <p>Ekko</p>
-      <img src="img/ekko.png" alt="Ekko - Personaje principal">
-    </div>
-    
-    <div class="galeria-item">
-        <p>Piltover</p>
-      <img src="img/piltoverv2.png" alt="Ciudad de Piltover">
-    </div>
-    
-    <div class="galeria-item">
-        <p>Zaun</p>
-      <img src="img/Zaunv2.png" alt="Ciudad de Zaun">
-    </div>
+    <div class="galeria-item" id="galeria-ekko">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('personajes','ekko')">
+    <p>Ekko</p>
+    <img src="img/ekko.png" alt="Ekko - Personaje principal">
+  </a>
+</div>
 
-    <div class="galeria-item">
-        <p>Freljord</p>
-      <img src="img/flerjordv2.png" alt="Región de Freljord">
-    </div>
-    <!-- 🔹 Podés seguir agregando más imágenes acá -->  
+    <div class="galeria-item" id="galeria-piltover">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('regiones','piltover')">
+    <p>Piltover</p>
+    <img src="img/piltoverv2.png" alt="Piltover">
+  </a>
+</div>
+
+    <div class="galeria-item" id="galeria-zaun">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('regiones','zaun')">
+    <p>Zaun</p>
+    <img src="img/Zaunv2.png" alt="Zaun">
+  </a>
+</div>
+
+<div class="galeria-item" id="galeria-freljord">
+  <a href="javascript:void(0)" onclick="goToSectionAndAnchor('regiones','freljord')">
+    <p>Freljord</p>
+    <img src="img/flerjordv2.png" alt="Freljord">
+  </a>
+</div>
+
+    <!-- 🔹 seguir agregando más imágenes acá -->  
   </div>
 </section>
 
-                </section>
+<section id="personajes" class="seccion">
+  <h2>Personajes</h2>
+  <hr class="separador">
+    <div class="personaje">
+        <h3 id="vi">Vi</h3>
+        <p>
+        Hermana mayor protectora de Powder (Jinx). Es una luchadora callejera fuerte y con principios que
+         se obsesiona con encontrar a su hermana tras su traumática separación.
+         Termina encarcelada, pero se une a Caitlyn para restaurar el orden.
+        </p>
+       </div>
+<hr class="separador">
+    <div class="personaje">
+    <h3 id="caitlyn">Caitlyn</h3>
+    <p>
+Una joven de la élite de Piltover que rechaza la complacencia de su clase.
+ Se convierte en Sheriff y forma una alianza crucial con Vi para investigar y detener el caos en las calles.
+  Su camino es el de la justicia y el orden.
+    </p>
+  </div> 
+<hr class="separador">
+ <div class="personaje">
+    <h3 id="jayce">Jayce</h3>
+    <p>
+Joven inventor de Piltover que descubre el potencial de la magia Hextech. Se convierte en un político
+ idealista y un símbolo de progreso para Piltover,
+ aunque su arrogancia inicial y su inexperiencia lo llevan a cometer errores políticos y personales graves.
+    </p>
+  </div>
+<hr class="separador">
+  <div class="personaje">
+       <h3 id="viktor">Viktor</h3>
+    <p>
+Científico brillante pero enfermizo de Zaun, colega de Jayce.
+ Se obsesiona con la "Evolución Gloriosa" para superar sus límites físicos.
+ Su ambición científica lo lleva a tomar decisiones moralmente cuestionables, creando una fractura con Jayce.
+    </p>      
+    </div>  
+<hr class="separador">
+  <div class="personaje">
+     <h3 id="Vander">Vander</h3>    
+        <p> 
+Líder de facto de la parte pobre de Zaun y figura paterna para Vi,
+ Powder y otros huérfanos. Sacrificó su vida para protegerlos de Silco y la ira de Piltover,
+  convirtiéndose en un mártir para la causa de Zaun.
+        </p>    
+    </div>
+<hr class="separador">
+    <div class="personaje">
+    <h3 id="silco">Silco</h3>   
+    <p>
+Villano principal y líder criminal de Zaun. Obsesionado con la independencia de Zaun ("El Sueño Inmortal"),
+ adopta y manipula a Powder, convirtiéndola en Jinx. Es una figura paterna tóxica para Jinx y
+  enemigo mortal de Vander y Vi.
+    </p>
+    </div>
+<hr class="separador">
+    <div class="personaje">
+    <h3 id="heimerdinger">Heimerdinger</h3> 
+    <p>
+Un anciano y sabio Yordle (una raza pequeña) que es uno de los fundadores de Piltover.
+ Representa la cautela y la tradición científica.
+  Se opone inicialmente a la Hextech por considerarla demasiado peligrosa e inestable.
+    </p>
+    </div>
+<hr class="separador">
+    <div class="personaje">
+    <h3 id="singed">Singed</h3> 
+    <p>
+Químico oscuro y pragmático.
+ Actúa como el científico principal de Silco.
+  Está obsesionado con la alquimia y la mejora biológica,
+   siendo responsable de experimentos brutales (como la creación de Warwick y la corrupción de su propio cuerpo).
+    </p>
+    </div>
+<hr class="separador">
+    <div class="personaje">
+    <h3 id="mel">Mel</h3>   
+    <p>
+Una influyente y astuta política de Piltover,
+ proveniente de la misteriosa familia Medarda. Es mentora y amante de Jayce,
+ usando su carisma e inteligencia para guiar su carrera, aunque tiene sus propios planes de poder. 
+   </p>
+    </div>
+<hr class="separador">
+  <div class="personaje">
+    <h3 id="jinx">Jinx</h3>
+<p>
+<b>I</b> - Orígenes: Powder en Zaun
+<p>
+Nombre Original: Antes de ser Jinx, se llamaba Powder.
+<p>
+Infancia: Creció en los callejones de Zaun, la ciudad subterránea oprimida bajo la próspera Piltover.
+<p>
+Relación con Vi: Era la hermana menor de Vi. A pesar de que Powder era ingeniosa e inventaba artilugios, era torpe y causaba problemas constantemente con sus experimentos inestables. Vi era muy protectora con ella.
+<p>
+Trauma y Abandono: Durante un trabajo fallido junto a Vi y otros huérfanos bajo el cuidado de Vander (figura paterna), Powder intenta ayudar con una de sus invenciones, pero esto resulta en una explosión catastrófica que mata a varios de sus amigos y, de alguna manera, causa una separación o un profundo quiebre con Vi.
+<p>
+El Quiebre: Vi, devastada y enfurecida, abofetea a Powder y se marcha, sintiendo Powder que ha sido abandonada y culpándose por todo.
+<p>
+<b>II</b> - La Transformación: Nace Jinx
+<p>
+Adopción por Silco: Tras el incidente, Powder es encontrada por Silco, una figura criminal de Zaun que se convierte en su nuevo mentor y figura paterna, aunque de manera tóxica y manipuladora.
+<p>
+Identidad Nueva: Para huir del dolor y la culpa de ser "Powder", adopta el nombre de Jinx (la bala perdida).
+<p>
+Locura y Caos: Bajo la influencia de Silco y alimentada por sus traumas, su inestabilidad mental se profundiza. Desarrolla una personalidad maníaca, obsesiva y adicta al caos, utilizando sus habilidades de invención para crear armamento destructivo (como sus armas "Fishbones", "Caitlyn" y "Zapper").
+<p>
+<b>III</b> - En el Universo de League of Legends (El Caos en Piltover)
+<p>
+En la narrativa principal de League of Legends, Jinx es conocida como "La Bala Perdida", una terrorista anárquica que utiliza su arsenal para desatar el caos en Piltover, a menudo atacando sus estructuras de poder y provocando a Vi (que se convierte en una guardiana de la ley).
+<p>
+Su motivación es puramente destructiva y su obsesión con Vi sigue siendo un tema central en su relación rota.
+<p>
+En esencia, el lore de Jinx es una tragedia sobre el trauma, el abandono y la salud mental, mostrando cómo una niña ingeniosa y bien intencionada (Powder) puede ser moldeada por el dolor y la falta de apoyo en una de las villanas más icónicas y peligrosas del universo de League of Legends (Jinx).
+    </p>
+  </div>
+<hr class="separador">
+  <div class="personaje">
+    <h3 id="ekko">Ekko</h3>
+    <p>
+ Ekko es un joven prodigio e inventor de Zaun (la ciudad subterránea). Su historia se resume en su habilidad única para manipular el tiempo para proteger a su gente.
+<p>
+Chico de Zaun: Ekko es un genio inventor que creció en las calles empobrecidas de Zaun, junto a otros huérfanos, incluida Jinx (antes Powder) y Vi.
+<p>
+El Descubrimiento: Encontró un fragmento de cristal Hextech (tecnología de Piltover) roto y lo usó para crear el "Dispositivo Z" (Z-Drive).
+<p>
+Poder sobre el Tiempo: El Z-Drive le permite rebobinar el tiempo por unos segundos y corregir errores, lo que le permite lograr lo "imposible" al primer intento.
+<p>
+Héroe Local: Se niega a usar su talento en la opulenta Piltover, eligiendo en cambio quedarse en Zaun. Lidera el grupo de resistencia conocido como los Firelights (Luciérnagas) y usa su don para defender a su comunidad y construir un futuro mejor.
+<p>
+Motivación: No quiere cambiar el pasado, sino asegurarse de que sus amigos y su ciudad tengan un futuro. Es la "Esperanza de Zaun".
+    </p>
+  </div>
+  <hr class="separador">
+  <div>
+    <p>
+    <a href="javascript:void(0)" onclick="goToSectionAndAnchor('galeria','galeria-ekko')" class="link-galeria">Ver imagen en galería</a>
+    </p>
+  </div>
+</section>
+<section id="regiones" class="seccion">
+<h2>Regiones</h2>
+<hr class="separador">
+    <div class="region">
+        <h3 id="piltover">Piltover</h3>
+        <p>
+            <b><i>La Ciudad del Progreso</i></b>
+            <p>
+Concepto: Es el centro cultural, comercial y de innovación de Runaterra. Se le conoce como la "Ciudad del Progreso".
+<p>
+Sociedad: Es una sociedad aristocrática y formal, gobernada por poderosos clanes mercantes (como los Kiramman y los Medarda). El arte, la artesanía de alta calidad y el comercio impulsan su poder.
+<p>
+Tecnología Clave: Piltover es el hogar de la Hextech, una tecnología revolucionaria que fusiona la magia con la ciencia, permitiendo avances increíbles en todos los aspectos de la vida, desde la iluminación hasta la defensa.
+<p>
+Atmósfera: Luminosa, elevada, ordenada y obsesionada con el avance y la estética, aunque oculta una profunda brecha social con la ciudad de abajo.
+        </p>
+       </div>
+<hr class="separador">
+    <div class="region">
+    <h3 id="zaun">Zaun</h3>
+    <b><i>La Ciudad Subterránea</i></b>
+    <p>
+Concepto: Un vasto distrito industrial y suburbano que se desarrolló en los cañones y valles bajo Piltover. Es el oscuro espejo de su ciudad hermana.
+<p>
+Sociedad: Caótica, contaminada y regida por el submundo criminal y la desesperación. La supervivencia es primordial. La gente de Zaun es resiliente, ingeniosa y a menudo resentida con la opulencia de Piltover.
+<p>
+Tecnología/Química: A diferencia de la Hextech refinada de arriba, Zaun es conocida por el desarrollo libre y peligroso de tecnologías volátiles y productos químicos (Química o Chemtech).
+<p>
+Atmósfera: Oscura, industrial, con humo constante que filtra la poca luz que llega desde arriba. A pesar de la contaminación, es una sociedad vibrante con una cultura rica y propia.
+    </p>
+  </div> 
+<hr class="separador">
+  <div class="region">
+       <h3 id="freljord">Freljord</h3>
+       <b><i>La Tierra Helada</i></b>
+    <p>
+Concepto: Una vasta y gélida tierra al norte, caracterizada por inviernos brutales y una geografía implacable. Es un continente de tribus en constante lucha.
+<p>
+Sociedad: Su cultura se basa en la fuerza, la supervivencia y el honor. Sus habitantes son guerreros feroces y resistentes, forjados por el clima extremo.
+<p>
+Política: Tradicionalmente dividida, las principales facciones históricas giran en torno a la unificación:
+<p>
+Avarosanos (liderados por Ashe): Buscan unir las tribus bajo un liderazgo pacífico y justo.
+<p>
+Garra Invernal (liderada por Sejuani): Creen en la fuerza pura y la conquista para forzar la unidad.
+<p>
+La Guardia de Hielo (liderada por Lissandra): Un culto secreto que vigila algo antiguo y peligroso bajo el hielo.
+<p>
+Atmósfera: Desolada, nevada, primigenia y marcada por antiguas magias elementales y mitología profunda, incluyendo los espíritus ancestrales de la tierra.
+    </p>      
+    </div>
+<hr class="separador">
+    <div>
+    <p>
+    <a href="javascript:void(0)" onclick="goToSectionAndAnchor('galeria','galeria-ekko')" class="link-galeria">Ver imagen en galería</a>
+    </p>
+  </div>
+</section>
+
 
                 <section id="contacto" class="seccion">
                     <h2>Contacto</h2>
