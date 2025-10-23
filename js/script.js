@@ -12,6 +12,25 @@ function mostrarSeccion(id) {
     if (botonActivo) botonActivo.classList.add('activo');
 }
 
+/**
+ * Abre la sección `sectionId` y luego hace scroll al elemento con id `anchorId`.
+ * Se usa setTimeout corto para esperar a que la sección se muestre.
+ */
+function goToSectionAndAnchor(sectionId, anchorId) {
+  // Activar la sección
+  mostrarSeccion(sectionId);
+
+  // Pequeña espera para que la sección esté visible y el browser calcule layout
+  setTimeout(() => {
+    const el = document.getElementById(anchorId);
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // opcional: foco para accesibilidad
+    try { el.focus({ preventScroll: true }); } catch (e) {}
+  }, 120);
+}
+
+
 window.onload = function () {
     /* -------------------- Fondo animado (sin cambios) -------------------- */
     const canvas = document.getElementById("fondoAnimado");
