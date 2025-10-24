@@ -690,6 +690,60 @@ hr.separador {
   border: none;
 }
 
+/* --- Temporadas y actos (Noticias) --- */
+.temporada {
+  margin: 40px auto;
+  max-width: 750px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.2);
+}
+
+.temporada h4 {
+  text-align: center;
+  color: #ff6600;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.acto h5 {
+  margin: 15px 0 8px;
+  font-size: 18px;
+  color: #ffb366;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lista-capitulos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-capitulos li {
+  background: rgba(255, 102, 0, 0.1);
+  border-left: 4px solid #ff6600;
+  margin-bottom: 8px;
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.lista-capitulos li:hover {
+  background: rgba(255, 102, 0, 0.3);
+}
+
+.lista-capitulos .numero {
+  color: #ff6600;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+
 
 /* footer {
 
